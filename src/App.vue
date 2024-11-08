@@ -1,24 +1,6 @@
-## vue2的工具函数组件，持续更新...
-
-## 功能
-回显文本，带颜色的，常用与`el-table`中，其他地方也可用，不用再写多个`v-if`了
-
-## 安装
-```
-yarn install vue-rui-utils
-```
-
-## 使用
-
-#### 引入
-```
-import { DictColorLabel } from 'vue2-rui-utils'
-```
-#### 使用
-```
 <template>
   <div id="app">
-   <!--  默认回显  -->
+    <!--  默认回显  -->
     <dict-color-label :options="auditStatusOptions" :value="1" />
     <dict-color-label :options="auditStatusOptions" :value="0" />
     <!--  找不到值的，默认显示value  -->
@@ -33,7 +15,12 @@ import { DictColorLabel } from 'vue2-rui-utils'
 </template>
 
 <script>
+import { DictColorLabel } from './package'
 export default {
+  name: 'App',
+  components: {
+    DictColorLabel
+  },
   data() {
     return {
       auditStatusOptions: [
@@ -46,12 +33,7 @@ export default {
   }
 }
 </script>
-```
-#### options参数说明
-###### options { Array } 必传
-| 参数    | 说明               | 类型      | 必传 |
-|-------|------------------|-----------------|----|
-| value | 值                | String / Number | 必传 |
-| label | 显示文本             | String | 必传 |
-| type | 颜色类型，默认为空，可选值：【success, warning, danger, info】 | String | 非必传 |
-| color | 自定义颜色，type为空时生效 | String | 非必传 |
+
+<style>
+
+</style>
