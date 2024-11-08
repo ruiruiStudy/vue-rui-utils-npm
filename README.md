@@ -47,6 +47,10 @@ export default {
 }
 </script>
 ```
+#### 效果图
+<img src="./src/assets/examples/dict-color-text.jpg" />
+
+
 #### options参数说明
 ###### options { Array } 必传
 | 参数    | 说明               | 类型      | 必传 |
