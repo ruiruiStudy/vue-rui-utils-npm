@@ -53,9 +53,9 @@ export default {
 
 #### options参数说明
 ###### options { Array } 必传
-| 参数    | 说明               | 类型      | 必传 |
-|-------|------------------|-----------------|----|
-| value | 值                | String / Number | 必传 |
-| label | 显示文本             | String | 必传 |
-| type | 颜色类型，默认为空，可选值：【success, warning, danger, info】 | String | 非必传 |
-| color | 自定义颜色，type为空时生效 | String | 非必传 |
+| 参数    | 说明                                                     | 类型      | 必传 |
+|-------|--------------------------------------------------------|-----------------|----|
+| value | 值                                                      | String / Number | 必传 |
+| label | 显示文本                                                   | String | 必传 |
+| type | 颜色类型，默认为空，可选值：【primary，success, warning, danger, info】 | String | 非必传 |
+| color | 自定义颜色，type为空时生效                                        | String | 非必传 |
